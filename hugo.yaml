@@ -1,0 +1,7 @@
+baseURL: "https://nykantwi.github.io/Portfolio/"
+languageCode: "da-DK"
+defaultContentLanguage: "da"
+
+caches:
+  images:
+    dir: ':cachesDir/images'
