@@ -1,25 +1,25 @@
 ## Meta tags
 - id: "meta_title"
-  translation: "Adritian - a high performance hugo theme by Adrián Moreno"
+  translation: "Nana Yaw Kyei Antwi | Portfolio"
 - id: "meta_description"
-  translation: "This hugo theme (Adritian) is based on Bootstrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications."
+  translation: "Projects and work by Nana Yaw Kyei Antwi."
 - id: "meta_keywords"
-  translation: "hugo, theme, bootstrap, adritian, adrian moreno, personal site, portfolio, single page application"
+  translation: "Nana Yaw Kyei Antwi, portfolio, SM3-CIT, Cyber Incident Tracker"
 - id: "meta_author"
-  translation: "Adrián Moreno Peña"
+  translation: "Nana Yaw Kyei Antwi"
 - id: "meta_image"
   translation: "/img/general/og-image.jpg"
 
 ## Header
 
 - id: "logo_alt"
-  translation: "Adritian logo"
+  translation: "Nana Yaw Kyei Antwi"
 
 - id: "logo_text1"
-  translation: "Adritian"
+  translation: "Nana"
 
 - id: "logo_text2"
-  translation: "Demo"
+  translation: "Antwi"
 
 ## General
 - id: "skipToMainContent"
@@ -30,7 +30,7 @@
 
 ## Footer
 - id: "footer_notice"
-  translation: "© Adritian. Free Hugo theme by Adrián Moreno Peña."
+  translation: "© Nana Yaw Kyei Antwi. Theme: Adritian by Adrián Moreno Peña."
 
 - id: "language"
   translation: "Language"
@@ -76,10 +76,10 @@
 
 ## Homepage head title
 - id: "head_title"
-  translation: "Demo site for Adritian - a high performance hugo theme by Adrián Moreno"
+  translation: "Nana Yaw Kyei Antwi | Portfolio"
 
 - id: "head_description"
-  translation: "This hugo theme (Adritian) is based on Bootstrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications."
+  translation: "Projects and work by Nana Yaw Kyei Antwi."
 
 ## Homepage showcase
 - id: "showcase_title"
@@ -341,3 +341,4 @@
 
 - id: "footer_navigation"
   translation: "Footer navigation"
+
