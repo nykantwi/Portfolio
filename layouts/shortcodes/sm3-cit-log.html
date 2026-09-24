@@ -1,0 +1,11 @@
+<div class="development-log">
+  {{ range (where .Site.RegularPages "Params.project" "sm3-cit").ByDate.Reverse }}
+  <article class="mb-4">
+    <p><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time></p>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p>{{ .Description }}</p>
+  </article>
+  {{ else }}
+  <p>The first development log entry is coming soon.</p>
+  {{ end }}
+</div>

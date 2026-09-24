@@ -6,11 +6,15 @@ draft: false
 
 ## Cyber Incident Tracker
 
-SM3-CIT is the first project featured in my portfolio.
+SM3-CIT is my Cyber Incident Tracker project. I'm building its foundation in Java, with JPA/Hibernate for database access and PostgreSQL for storage.
 
-More details about the project, my contribution and the technologies used will be added here.
+The current work focuses on storing incidents, implementing create, read, update and delete operations, and adding status and severity to the incident model.
 
-<!-- Replace the paragraph above with your project description. You can add sections for My contribution, Technologies, Screenshots and What I learned. -->
+## Development log
+
+Short notes on what I worked on, the challenges I encountered and what comes next. Newest entries appear first.
+
+{{< sm3-cit-log >}}
 
 [Back to my portfolio]({{< relref "/" >}}#projects)
 
