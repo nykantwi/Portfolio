@@ -172,24 +172,24 @@ URL = '/'
 weight = 1
 [[languages.en.menus.header]]
 name = 'About'
-URL = '/#about'
+URL = '/about/'
 weight = 2
 [[languages.en.menus.header]]
 name = 'Projects'
-URL = '/#projects'
+URL = '/projects/'
 weight = 3
 [[languages.en.menus.header]]
 name = 'Contact'
-URL = '/#contact'
+URL = '/contact/'
 weight = 4
 
 [[languages.en.menus.footer]]
 name = 'Projects'
-URL = '/#projects'
+URL = '/projects/'
 weight = 1
 [[languages.en.menus.footer]]
 name = 'Contact'
-URL = '/#contact'
+URL = '/contact/'
 weight = 2
 
 # Plugins

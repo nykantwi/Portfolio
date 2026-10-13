@@ -9,8 +9,8 @@ draft = false
     <p class="section__subtitle">COMPUTER SCIENCE STUDENT · EK</p>
     <h1>Nana Yaw<br>Kyei Antwi</h1>
     <p class="lead" style="max-width: 640px; margin-top: 1.5rem;">Studying Computer Science at Erhvervsakademi København (EK). Explore my projects as I learn to turn ideas into working software.</p>
-    <a class="btn btn-primary" href="#projects">Explore my work</a>
-    <a class="btn btn-outline-primary" href="#contact">Get in touch</a>
+    <a class="btn btn-primary" href="{{< relref "/projects" >}}">Explore my work</a>
+    <a class="btn btn-outline-primary" href="{{< relref "/contact" >}}">Get in touch</a>
   </div>
 </section>
 

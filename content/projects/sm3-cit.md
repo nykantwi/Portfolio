@@ -24,4 +24,4 @@ The available history documents work in weeks 38 and 40. There is no separately 
 
 {{< sm3-cit-log >}}
 
-[Back to my portfolio]({{< relref "/" >}}#projects)
+[Back to projects]({{< relref "/projects" >}})
