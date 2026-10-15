@@ -10,7 +10,7 @@ draft: false
 
 Denne uge har jeg arbejdet med concurrency ved at lave en statistikdemo til Cyber Incident Tracker.
 
-Programmet henter hændelser fra databasen og sender to tælleopgaver til en ExecutorService med to worker-tråde:
+Programmet henter hændelser fra databasen og sender to tælleopgaver til en ExecutorService med to worker-thread:
 
 - Tæl alle åbne hændelser.
 - Tæl åbne hændelser med MEDIUM severity.
@@ -28,7 +28,7 @@ Jeg har lært forskellen på at beskrive en opgave med Callable, sende den til e
 I starten kaldte jeg shutdown(), før opgaverne blev indsendt. Det gav en RejectedExecutionException, fordi executor ikke længere accepterede nye opgaver. Fejlen blev løst ved at flytte shutdown().
 
 
-## Afprøvning og resultater
+## Resultat
 
 En manuel kørsel mod den lokale database viste:
 
