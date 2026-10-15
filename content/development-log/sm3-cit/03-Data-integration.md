@@ -3,8 +3,6 @@ title: "Uge 3 – Dataintegration med et eksternt API"
 date: 2026-10-13T18:48:00+02:00
 description: "CVE-opslag med Java HttpClient, JSON-mapping og tests. Koblingen til CIT-hændelser mangler endnu."
 project: "sm3-cit"
-week: "2026-W42"
-period: "Kalenderuge 42 · 12–18 oktober 2026 · opdateret til 13. oktober"
 draft: false
 ---
 
