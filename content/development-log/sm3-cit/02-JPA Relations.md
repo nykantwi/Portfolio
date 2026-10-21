@@ -34,7 +34,7 @@ Jeg afprøvede CRUD-forløbet manuelt med en testhændelse. På dette tidspunkt 
 
 For at gøre hændelserne mere relevante for projektet tilføjede jeg to enums:
 
-- **Status:** `OPEN`, `INVESTIGATING`, `CONTAINED` og `RESOLVED`.
+54- **Status:** `OPEN`, `¿, `CONTAINED` og `RESOLVED`.
 - **Severity:** `LOW`, `MEDIUM`, `HIGH` og `CRITICAL`.
 
 Enum-værdierne gemmes som tekst i databasen med `EnumType.STRING`. Nye hændelser får automatisk status `OPEN` og severity `MEDIUM`, medmindre værdierne ændres eller bliver sat.
