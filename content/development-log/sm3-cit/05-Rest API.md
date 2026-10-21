@@ -67,6 +67,12 @@ Ved testkørslen bestod alle 17 tests i projektet. Det var 15 eksisterende tests
 
 Jeg har fået en bedre forståelse af hele forløbet fra en HTTP-request til databasen og tilbage som JSON. Jeg har også lært, at serverens port er adskilt fra de porte, som PostgreSQL og pgAdmin bruger. Mit API kører på `7070`, mens pgAdmin bruger `8080`.
 
-CRUD-funktionerne til hændelser er nu tilgængelige gennem API’et. Næste skridt er at skrive den egentlige API-dokumentation med request- og response-eksempler, nødvendige felter og mulige statuskoder. Dette portfolioindlæg beskriver arbejdet og min læring; den separate dokumentation skal forklare, hvordan API’et bruges.
+CRUD-funktionerne til hændelser er nu tilgængelige gennem API’et. Jeg har også skrevet API-dokumentation med request- og response-eksempler, nødvendige felter og mulige statuskoder.
+
+## API-dokumentation
+
+Her kan du læse, hvordan CIT’s API bruges:
+
+<a class="btn btn-primary" href="{{< relref "/documentation/cit-api" >}}">Læs API-dokumentationen</a>
 
 [Tilbage til SM3-CIT]({{< relref "/projects/sm3-cit" >}})
