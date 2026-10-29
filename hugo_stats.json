@@ -17,7 +17,6 @@
       "head",
       "header",
       "html",
-      "integer",
       "li",
       "link",
       "main",
@@ -41,7 +40,6 @@
       "td",
       "th",
       "thead",
-      "time",
       "title",
       "tr",
       "ul"
@@ -207,9 +205,6 @@
       "brugere-passwords-og-roller",
       "contact",
       "content",
-      "current-implementation",
-      "cyber-incident-tracker",
-      "dtoer-og-validering",
       "endpoints",
       "error-button",
       "error-description",
@@ -225,6 +220,7 @@
       "hvad-jeg-har-lært",
       "hvad-testene-kontrollerer",
       "implementering",
+      "logbog",
       "login-og-adgang",
       "main-content",
       "mulige-forbedringer-og-næste-skridt",
@@ -232,11 +228,9 @@
       "næste-skridt",
       "opbygning-af-apiet",
       "opsumering",
-      "opsummering",
       "projects",
       "request-body-og-response-formater",
       "resultat",
-      "roller-og-adgang",
       "sm3-cit",
       "status-og-severity",
       "test-og-læring",
@@ -248,8 +242,7 @@
       "udfordringer",
       "udfordringer-og-læring",
       "ugeopsummering",
-      "validering-af-id",
-      "weekly-development-log"
+      "validering-af-id"
     ]
   }
 }

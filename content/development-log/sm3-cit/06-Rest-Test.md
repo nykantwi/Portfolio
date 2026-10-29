@@ -19,6 +19,7 @@ Testcontainers starter en separat PostgreSQL-database. Før hver test rydder jeg
 Jeg har nu 7 API-tests:
 
 - **GET af alle hændelser:** Kontrollerer status `200` og JSON som indholdstype.
+- **GET med kontrol af indhold:** Kontrollerer, at listen indeholder testhændelsens titel.
 - **GET via ID:** Kontrollerer, at den rigtige hændelse returneres med det forventede ID, titel og status.
 - **POST:** Opretter en hændelse og kontrollerer status `201`, et genereret ID og de forventede felter. Hændelsen hentes bagefter med GET for at kontrollere, at den er gemt.
 - **POST med tom titel:** Kontrollerer status `400` og fejlbeskeden `Titel må ikke være tom`.

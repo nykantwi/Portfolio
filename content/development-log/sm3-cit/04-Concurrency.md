@@ -17,7 +17,7 @@ Programmet henter hændelser fra databasen og sender to tælleopgaver til en Exe
 
 ## Hvad jeg har implementeret
 
-Hver opgave er en Callable<Integer>, som returnerer et antal. Begge opgaver indsendes med submit(), før resultaterne hentes med Future.get(). Det giver opgaverne mulighed for at køre samtidigt.
+Hver opgave er en `Callable<Integer>`, som returnerer et antal. Begge opgaver indsendes med submit(), før resultaterne hentes med Future.get(). Det giver opgaverne mulighed for at køre samtidigt.
 
 Resultaterne udskrives i konsollen. Executor og EntityManagerFactory lukkes i en finally-blok efter håndteringen af resultaterne.
 
@@ -35,7 +35,6 @@ En manuel kørsel mod den lokale database viste:
 - Åbne hændelser: 2.
 - Åbne hændelser med MEDIUM severity: 2.
 
-Da MEDIUM er min default severity til når man opretter hændelser 
+Da MEDIUM er min default severity til når man opretter hændelser
 
-
-
+[Tilbage til SM3-CIT]({{< relref "/projects/sm3-cit" >}})

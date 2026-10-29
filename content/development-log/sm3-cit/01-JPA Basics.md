@@ -1,33 +1,45 @@
 ---
-title: "Uge 2 – JPA Relations"
-date: 2026-10-03T00:00:00+02:00
-description: "Relationer mellem brugere og hændelser, DAO-interfaces og validering."
+title: "Uge 1 – JPA Basics"
+date: 2026-09-19T21:00:00+02:00
+description: "Opsætning af projektet, lagring af hændelser og CRUD med JPA/Hibernate."
 project: "sm3-cit"
-week: "2026-W40"
-period: "Kalenderuge 40 · 28. september–4. oktober 2026 · opdateret til 3. oktober"
+week: "2026-W38"
+period: "Kalenderuge 38 · 14.–20. september 2026"
 draft: false
 ---
 
-## Hvad har jeg implementeret?
+## Opsumering 
 
-Jeg har implementeret relationer mellem brugere, hændelser og kommentarer med JPA. En hændelse har en rapportør, og en kommentar tilhører både en bruger og en hændelse.
+Denne uge begyndte jeg på Cyber Incident Tracker og opbyggede fundamentet til projektets backend med Java, JPA/Hibernate og PostgreSQL.
 
-## Implementering
+Fokus var at kunne oprette hændelser som Java-objekter, gemme dem i databasen og hente dem igen.
 
-- User, Incident og Comment med ManyToOne-relationer.
-- DAO-klasser og interfaces til databaseoperationer.
-- JPQL til brugeropslag, rapportør filtrering og kommentarer til en hændelse.
-- IncidentService med validering og håndtering af hændelser.
+## Hvad jeg har implementeret?
 
-## Test og læring
+Jeg oprettede projektets packages og en `Incident`-entity med ID, titel og beskrivelse. Med JPA-annotationer koblede jeg klassen til tabellen `incidents` i min database.
 
-Der er implementeret databasetests med JUnit og Testcontainers for CRUD, relationer, brugeropslag og filtrering.
+Derefter implementerede jeg CRUD i `IncidentDAO` med metoder til at:
 
-Jeg har lært at adskille databasearbejdet i DAO-laget fra validering og forretningslogik i service-laget.
+- Oprette en hændelse.
+- Hente en hændelse ud fra dens ID.
+- Hente alle hændelser.
+- Opdatere en hændelse.
+- Slette en hændelse.
 
-## Næste skridt
+Metoder, der ændrer data, bruger transaktioner med commit() og rollback(). Hver DAO-metode åbner og lukker sin egen EntityManager.
 
-- Muligvis tilføje tests af IncidentService.
+Jeg afprøvede CRUD-forløbet manuelt med en testhændelse. På dette tidspunkt havde jeg endnu ikke automatiserede DAO-tests.
 
+## Status og severity
+
+For at gøre hændelserne mere relevante for projektet tilføjede jeg to enums:
+
+- **Status:** `OPEN`, `INVESTIGATING`, `CONTAINED` og `RESOLVED`.
+- **Severity:** `LOW`, `MEDIUM`, `HIGH` og `CRITICAL`.
+
+Enum-værdierne gemmes som tekst i databasen med `EnumType.STRING`. Nye hændelser får automatisk status `OPEN` og severity `MEDIUM`, medmindre værdierne ændres eller bliver sat.
+
+
+*Opsummeringen beskriver arbejdet i denne uge. Senere udvidelser og tests dokumenteres i de efterfølgende indlæg.*
 
 [Tilbage til SM3-CIT]({{< relref "/projects/sm3-cit" >}})

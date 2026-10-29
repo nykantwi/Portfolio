@@ -26,8 +26,6 @@ I'm open to student jobs and internships where I can contribute, learn from othe
 ### SM3-CIT
 **Cyber Incident Tracker**
 
-The first project in my portfolio. A dedicated project page will bring together an overview, screenshots and the work behind SM3-CIT.
-
 [View project →]({{< relref "/projects/sm3-cit" >}})
 {{< /text-section >}}
 
