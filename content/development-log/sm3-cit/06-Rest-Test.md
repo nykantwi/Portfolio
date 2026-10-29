@@ -16,7 +16,7 @@ Testcontainers starter en separat PostgreSQL-database. Før hver test rydder jeg
 
 ### Hvad testene kontrollerer
 
-Jeg har nu 6 API-tests:
+Jeg har nu 7 API-tests:
 
 - **GET af alle hændelser:** Kontrollerer status `200` og JSON som indholdstype.
 - **GET via ID:** Kontrollerer, at den rigtige hændelse returneres med det forventede ID, titel og status.
