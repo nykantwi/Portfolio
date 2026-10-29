@@ -1,0 +1,50 @@
+/* Keep article pages readable on desktop and flexible on small screens. */
+main.container > section#main-content {
+  width: 100%;
+  max-width: 60rem;
+  margin-inline: auto;
+  padding-inline: clamp(.5rem, 2vw, 1.5rem);
+  padding-bottom: 3rem;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+}
+
+main #main-content > h1#title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+main article#content {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+
+main article#content p,
+main article#content li {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+main article#content p { margin-bottom: 1.25rem; }
+main article#content h2 {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  line-height: 1.3;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+main article#content h3 { font-size: 1.25rem; line-height: 1.4; }
+main article#content ul, main article#content ol { padding-left: 1.5rem; }
+main article#content li + li { margin-top: .4rem; }
+main article#content img { max-width: 100%; height: auto; }
+main article#content pre { max-width: 100%; overflow-x: auto; }
+main article#content pre code { overflow-wrap: normal; }
+main article#content table { display: block; max-width: 100%; overflow-x: auto; }
+
+/* Desktop only: adjust left to move the article sideways. */
+@media (min-width: 992px) {
+  main.container > section#main-content {
+    position: relative;
+    left: -150px;
+  }
+}
