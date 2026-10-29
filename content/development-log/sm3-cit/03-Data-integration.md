@@ -38,7 +38,7 @@ Fire automatiserede tests kontrollerer JSON-mappingen med faste API-svar. De dæ
 
 Testene bruger faste svar, så de kan køre uden forbindelse til NVD.
 
-Jeg afprøvede også et rigtigt opslag på `CVE-2021-44228`. Det returnerede en beskrivelse af Log4j-sårbarheden og en CVSS-score på 10.0.
+
 
 
 [Tilbage til SM3-CIT]({{< relref "/projects/sm3-cit" >}})

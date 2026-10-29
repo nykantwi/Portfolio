@@ -8,7 +8,7 @@ period: "Kalenderuge 40 · 28. september–4. oktober 2026 · opdateret til 3. o
 draft: false
 ---
 
-## Opsummering
+## Hvad har jeg implementeret?
 
 Jeg har implementeret relationer mellem brugere, hændelser og kommentarer med JPA. En hændelse har en rapportør, og en kommentar tilhører både en bruger og en hændelse.
 

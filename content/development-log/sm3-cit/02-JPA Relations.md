@@ -8,13 +8,13 @@ period: "Kalenderuge 38 · 14.–20. september 2026"
 draft: false
 ---
 
-## Ugeopsummering
+## Opsumering 
 
 Denne uge begyndte jeg på Cyber Incident Tracker og opbyggede fundamentet til projektets backend med Java, JPA/Hibernate og PostgreSQL.
 
 Fokus var at kunne oprette hændelser som Java-objekter, gemme dem i databasen og hente dem igen.
 
-## Hvad jeg har implementeret
+## Hvad jeg har implementeret?
 
 Jeg oprettede projektets packages og en `Incident`-entity med ID, titel og beskrivelse. Med JPA-annotationer koblede jeg klassen til tabellen `incidents` i min database.
 
