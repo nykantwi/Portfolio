@@ -1,10 +1,7 @@
 ---
 title: "Uge 2 – JPA Relations"
-date: 2026-10-03T00:00:00+02:00
 description: "Relationer mellem brugere og hændelser, DAO-interfaces og validering."
 project: "sm3-cit"
-week: "2026-W40"
-period: "Kalenderuge 40 · 28. september–4. oktober 2026 · opdateret til 3. oktober"
 draft: false
 ---
 

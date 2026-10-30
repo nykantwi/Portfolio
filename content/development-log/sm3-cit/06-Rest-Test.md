@@ -1,6 +1,5 @@
 ---
 title: "Uge 6 – REST & Test"
-date: 2026-10-25T12:00:00+01:00
 description: "Automatiserede API-tests med REST Assured, Hamcrest og en separat PostgreSQL-testdatabase."
 project: "sm3-cit"
 draft: false

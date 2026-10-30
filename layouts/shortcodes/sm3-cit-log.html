@@ -1,5 +1,5 @@
 <div class="development-log">
-  {{ range (where .Site.RegularPages "Params.project" "sm3-cit").ByDate.Reverse }}
+  {{ range sort (where .Site.RegularPages "Params.project" "sm3-cit") "File.LogicalName" "desc" }}
   <article class="mb-4">
     <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
     <p>{{ .Description }}</p>

@@ -1,10 +1,7 @@
 ---
 title: "Uge 1 – JPA Basics"
-date: 2026-09-19T21:00:00+02:00
 description: "Opsætning af projektet, lagring af hændelser og CRUD med JPA/Hibernate."
 project: "sm3-cit"
-week: "2026-W38"
-period: "Kalenderuge 38 · 14.–20. september 2026"
 draft: false
 ---
 

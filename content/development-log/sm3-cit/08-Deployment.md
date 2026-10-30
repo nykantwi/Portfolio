@@ -1,6 +1,5 @@
 ---
 title: "Uge 8 – Deployment"
-date: 2026-10-30T12:00:00+01:00
 description: "Deployment af CIT med GitHub Actions, Docker Hub, DigitalOcean og HTTPS gennem Caddy."
 project: "sm3-cit"
 draft: false

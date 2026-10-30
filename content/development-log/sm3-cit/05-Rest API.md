@@ -1,6 +1,5 @@
 ---
 title: "Uge 5 – REST API intro"
-date: 2026-10-21T12:00:00+02:00
 description: "REST API til CIT med Javalin, CRUD-endpoints, DTO’er, validering og fejlhåndtering."
 project: "sm3-cit"
 draft: false

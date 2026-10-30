@@ -1,6 +1,5 @@
 ---
 title: "Uge 7 – Security"
-date: 2026-10-29T15:00:00+01:00
 description: "Login med bcrypt og JWT, rollebaseret adgangskontrol og tests af beskyttede endpoints."
 project: "sm3-cit"
 draft: false

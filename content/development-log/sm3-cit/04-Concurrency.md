@@ -1,6 +1,5 @@
 ---
 title: "Uge 4 – Concurrency"
-date: 2026-10-15T22:25:00+02:00
 description: "Optælling af hændelser med ExecutorService, Callable og Future."
 project: "sm3-cit"
 draft: false
