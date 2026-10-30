@@ -48,14 +48,12 @@ Caddy fungerer som reverse proxy og håndterer HTTPS-certifikatet. Requests til 
 
 Jeg fik først timeout, da jeg forsøgte at tilgå API'et fra min Mac. API'et virkede inde på serveren, men DigitalOceans firewall tillod ikke port 7071. 
 Jeg tilføjede adgang fra min egen IP for at teste forbindelsen. Den almindelige adgang går nu gennem Caddy på HTTPS-port 443.
-
 Jeg havde også problemer med indrykningen i `compose.yaml`. Caddy-servicen stod forkert placeret, og Docker Compose kunne derfor ikke læse filen.
 
 
 ## Afprøvning
 
 Jeg har afprøvet registrering, login og hentning af hændelser med et JWT på serveren.
-
 Jeg har også kontrolleret, at HTTPS-adressen returnerer 401 uden token. Efter en opdatering af API-containeren kontrollerede jeg igen, at API'et svarede gennem Caddy.
 
 ## Hvad jeg har lært

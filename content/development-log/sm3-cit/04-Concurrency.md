@@ -17,15 +17,16 @@ Programmet henter hændelser fra databasen og sender to tælleopgaver til en Exe
 
 ## Hvad jeg har implementeret
 
-Hver opgave er en `Callable<Integer>`, som returnerer et antal. Begge opgaver indsendes med submit(), før resultaterne hentes med Future.get(). Det giver opgaverne mulighed for at køre samtidigt.
+Hver opgave er en `Callable<Integer>`, som returnerer et antal. Begge opgaver indsendes med submit(), før resultaterne hentes med Future.get().
+Det giver opgaverne mulighed for at køre samtidigt.
 
 Resultaterne udskrives i konsollen. Executor og EntityManagerFactory lukkes i en finally-blok efter håndteringen af resultaterne.
 
 ## Hvad jeg har lært
 
 Jeg har lært forskellen på at beskrive en opgave med Callable, sende den til en ExecutorService og hente resultatet gennem Future.
-
-I starten kaldte jeg shutdown(), før opgaverne blev indsendt. Det gav en RejectedExecutionException, fordi executor ikke længere accepterede nye opgaver. Fejlen blev løst ved at flytte shutdown().
+I starten kaldte jeg shutdown(), før opgaverne blev indsendt. Det gav en RejectedExecutionException, 
+fordi executor ikke længere accepterede nye opgaver. Fejlen blev løst ved at flytte shutdown().
 
 
 ## Resultat

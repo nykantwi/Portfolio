@@ -12,7 +12,8 @@ Denne uge har jeg lavet automatiserede tests af mit REST API med REST Assured og
 
 ## Testopsætning
 
-Testcontainers starter en separat PostgreSQL-database. Før hver test rydder jeg tabellerne og opretter en testbruger og en hændelse. Serveren og testene bruger den samme testdatabase.
+Testcontainers starter en separat PostgreSQL-database. Før hver test rydder jeg tabellerne og opretter en testbruger og 
+en hændelse. Serveren og testene bruger den samme testdatabase.
 
 ### Hvad testene kontrollerer
 
@@ -49,12 +50,14 @@ given()
 
 ## Udfordringer
 
-En af fejlene opstod, fordi jeg hentede hændelsens ID, før den var gemt. ID’et var derfor `null`, og REST Assured kunne ikke bruge det i URL’en. Jeg løste det ved at gemme ID’et efter `persist()` og `commit()` inde i `setUp()`.
-
-En anden udfordring var at koble API-serveren til testdatabasen. `setTest(true)` ændrede ikke databaseforbindelsen i min eksisterende opsætning. Så jeg tilpassede `startServer` så testen kunne sende sin egen `EntityManagerFactory` med. På den måde bruger API’et og testdata den samme separate database.
+En af fejlene opstod, fordi jeg hentede hændelsens ID, før den var gemt. ID’et var derfor `null`, og REST Assured kunne 
+ikke bruge det i URL’en. Jeg løste det ved at gemme ID’et efter `persist()` og `commit()` inde i `setUp()`.
+En anden udfordring var at koble API-serveren til testdatabasen. `setTest(true)` ændrede ikke databaseforbindelsen i min
+eksisterende opsætning. Så jeg tilpassede `startServer` så testen kunne sende sin egen `EntityManagerFactory` med. På den måde bruger API’et og testdata den samme separate database.
 
 ## Næste skridt
 
-Næste skridt kunne være flere tests med ugyldige ID’er og input. WebSockets og Webhooks er ikke implementeret i min projekt endnu, jeg vil forsøge at implementer det hvis jeg får tid til det.
+Næste skridt kunne være flere tests med ugyldige ID’er og input. WebSockets og Webhooks er ikke implementeret i min projekt endnu, 
+jeg vil forsøge at implementer det hvis jeg får tid til det.
 
 [Tilbage til SM3-CIT]({{< relref "/projects/sm3-cit" >}})

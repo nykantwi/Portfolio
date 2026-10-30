@@ -8,21 +8,25 @@ draft: false
 
 ## Hvad jeg har implementeret
 
-Denne uge har jeg lavet et REST API til CIT med Javalin. Før testede jeg funktionerne direkte i Java. Nu kan jeg sende HTTP-requests og oprette, hente, opdatere og slette hændelser.
+Denne uge har jeg lavet et REST API til CIT med Javalin. Før testede jeg funktionerne direkte i Java. 
+Nu kan jeg sende HTTP-requests og oprette, hente, opdatere og slette hændelser.
 
 ## Opbygning af API’et
 
-Jeg brugte Hotel API fra undervisningen som hjælp til strukturen. Mine routes starter med `/api/v1`, og serveren kører på port `7070`. Routes sender requesten videre til controlleren, som bruger service- og DAO-laget.
-
-Jeg har også lavet DTO’er til oprettelse, opdatering og svar. Der er kontrol af blandt andet tom titel, ugyldigt ID og manglende severity. Fejl sendes tilbage som JSON med en statuskode.
+Jeg brugte Hotel API fra undervisningen som hjælp til strukturen. Mine routes starter med `/api/v1`, og serveren kører på port `7070`. 
+Routes sender requesten videre til controlleren, som bruger service- og DAO-laget.
+Jeg har også lavet DTO’er til oprettelse, opdatering og svar. Der er kontrol af blandt andet tom titel, ugyldigt ID og 
+manglende severity. Fejl sendes tilbage som JSON med en statuskode.
 
 ## Afprøvning og tests
 
-Jeg testede API’et med HTTP-requests i IntelliJ og skrev API-dokumentation. Der blev også tilføjet to tests af opdatering gennem service og database. Ved kørslen bestod alle 17 tests. De var endnu ikke automatiserede HTTP-tests.
+Jeg testede API’et med HTTP-requests i IntelliJ og skrev API-dokumentation. Der blev også tilføjet to tests af opdatering 
+gennem service og database. Ved kørslen bestod alle 17 tests. De var endnu ikke automatiserede HTTP-tests.
 
 ## Hvad jeg har lært
 
-Jeg har fået bedre styr på, hvordan en request kommer fra klienten til databasen og tilbage som JSON. Jeg lærte også, at en DTO til oprettelse ikke behøver have de samme felter som svaret.
+Jeg har fået bedre styr på, hvordan en request kommer fra klienten til databasen og tilbage som JSON. Jeg lærte også, 
+at en DTO til oprettelse ikke behøver have de samme felter som svaret.
 
 ## Udfordringer
 

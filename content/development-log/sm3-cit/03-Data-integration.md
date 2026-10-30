@@ -10,13 +10,14 @@ draft: false
 
 Denne uge har jeg arbejdet med dataintegration ved at hente oplysninger om kendte sikkerhedssårbarheder fra NVD’s CVE-API.
 
-Formålet er at lære at hente eksterne data i Java og omdanne dem til objekter, som projektet kan bruge. På længere sigt kan oplysningerne supplere en hændelse i CIT, hvis den vedrører en kendt sårbarhed.
+Formålet er at lære at hente eksterne data i Java og omdanne dem til objekter, som projektet kan bruge. På længere sigt
+kan oplysningerne supplere en hændelse i CIT, hvis den vedrører en kendt sårbarhed.
 
 ## Hvad jeg har implementeret
 
 - `CveClient`, som sender GET-requests med Java `HttpClient`.
 - JSON-mapping med Jackson og ObjectMapper.
-- `CveDTO` med CVE-ID, engelsk beskrivelse og CVSS-score.
+- `CveDTO` med CVE-ID og engelsk beskrivelse.
 - `CveDemo`, som udfører et opslag og viser resultatet i konsollen.
 
 I `CveClient` henter fetchJson() API-svaret som tekst. Metoden fetchById() læser derefter JSON-strukturen og returnerer en CveDTO med de relevante oplysninger.
@@ -32,9 +33,16 @@ NVD’s JSON indeholder flere niveauer og lister. Derfor bruger jeg JsonNode til
 
 Jeg har også lært, at en DTO transporterer udvalgte data og ikke automatisk gemmes i databasen.
 
+## AI-hjælp
+
+Jeg fik hjælp af AI til at implementere CveClient, især JSON-mappingen og håndteringen af CVSS-score, fordi NVD's indle
+jrede data var komplicerede at arbejde med. Jeg har afprøvet løsningen, men havde ikke fuld styre på alle delene
+CVE-opslaget er fortsat en selvstændig demo og er endnu ikke integreret i hændelsesforløbet.
+
 ## Afprøvning og tests
 
-Fire automatiserede tests kontrollerer JSON-mappingen med faste API-svar. De dækker blandt andet valg af engelsk beskrivelse, håndtering af CVSS-score og manglende oplysninger samt afvisning af tomme resultater og et forkert CVE-ID.
+Fire automatiserede tests kontrollerer JSON-mappingen med faste API-svar. De dækker CVE-ID og valg af engelsk beskrivelse 
+manglende beskrivelser, beskrivelser uden engelsk samt afvisning af tomme resultater og et forkert CVE-ID.
 
 Testene bruger faste svar, så de kan køre uden forbindelse til NVD.
 

@@ -10,13 +10,15 @@ draft: false
 
 ## Opsumering 
 
-Denne uge begyndte jeg på Cyber Incident Tracker og opbyggede fundamentet til projektets backend med Java, JPA/Hibernate og PostgreSQL.
+Denne uge begyndte jeg på Cyber Incident Tracker og opbyggede fundamentet til projektets backend med Java, JPA/Hibernate 
+og PostgreSQL.
 
 Fokus var at kunne oprette hændelser som Java-objekter, gemme dem i databasen og hente dem igen.
 
 ## Hvad jeg har implementeret?
 
-Jeg oprettede projektets packages og en `Incident`-entity med ID, titel og beskrivelse. Med JPA-annotationer koblede jeg klassen til tabellen `incidents` i min database.
+Jeg oprettede projektets packages og en `Incident`-entity med ID, titel og beskrivelse. Med JPA-annotationer koblede jeg
+klassen til tabellen `incidents` i min database.
 
 Derefter implementerede jeg CRUD i `IncidentDAO` med metoder til at:
 
@@ -26,7 +28,8 @@ Derefter implementerede jeg CRUD i `IncidentDAO` med metoder til at:
 - Opdatere en hændelse.
 - Slette en hændelse.
 
-Metoder, der ændrer data, bruger transaktioner med commit() og rollback(). Hver DAO-metode åbner og lukker sin egen EntityManager.
+Metoder, der ændrer data, bruger transaktioner med commit() og rollback(). Hver DAO-metode åbner og lukker sin egen 
+EntityManager.
 
 Jeg afprøvede CRUD-forløbet manuelt med en testhændelse. På dette tidspunkt havde jeg endnu ikke automatiserede DAO-tests.
 
@@ -37,7 +40,8 @@ For at gøre hændelserne mere relevante for projektet tilføjede jeg to enums:
 - **Status:** `OPEN`, `INVESTIGATING`, `CONTAINED` og `RESOLVED`.
 - **Severity:** `LOW`, `MEDIUM`, `HIGH` og `CRITICAL`.
 
-Enum-værdierne gemmes som tekst i databasen med `EnumType.STRING`. Nye hændelser får automatisk status `OPEN` og severity `MEDIUM`, medmindre værdierne ændres eller bliver sat.
+Enum-værdierne gemmes som tekst i databasen med `EnumType.STRING`. Nye hændelser får automatisk status `OPEN` og severity
+`MEDIUM`, medmindre værdierne ændres eller bliver sat.
 
 
 *Opsummeringen beskriver arbejdet i denne uge. Senere udvidelser og tests dokumenteres i de efterfølgende indlæg.*
