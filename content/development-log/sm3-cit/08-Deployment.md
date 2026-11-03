@@ -9,8 +9,6 @@ draft: false
 
 Denne uge har jeg deployet CIT til DigitalOcean, så API'et kan bruges uden at køre på min egen computer.
 
-Jeg har fulgt undervisningens skabeloner til GitHub Actions, Docker og Caddy og tilpasset dem til mit projekt.
-
 API'et er tilgængeligt på:
 
 https://api.antwi.dk/api/v1/incidents
@@ -41,8 +39,6 @@ På DigitalOcean bruger jeg Docker Compose til at køre tre services:
 
 Jeg har oprettet en DNS-record, som peger `api.antwi.dk` på serverens IP-adresse.
 
-Caddy fungerer som reverse proxy og håndterer HTTPS-certifikatet. Requests til domænet bliver sendt videre til API-containeren på port 7070.
-
 ## Udfordringer
 
 Jeg fik først timeout, da jeg forsøgte at tilgå API'et fra min Mac. API'et virkede inde på serveren, men DigitalOceans firewall tillod ikke port 7071. 
@@ -50,10 +46,6 @@ Jeg tilføjede adgang fra min egen IP for at teste forbindelsen. Den almindelige
 Jeg havde også problemer med indrykningen i `compose.yaml`. Caddy-servicen stod forkert placeret, og Docker Compose kunne derfor ikke læse filen.
 
 
-## Afprøvning
-
-Jeg har afprøvet registrering, login og hentning af hændelser med et JWT på serveren.
-Jeg har også kontrolleret, at HTTPS-adressen returnerer 401 uden token. Efter en opdatering af API-containeren kontrollerede jeg igen, at API'et svarede gennem Caddy.
 
 ## Hvad jeg har lært
 Jeg har lært, hvordan man peger sit domæne på en server ved at lade DigitalOcean håndtere DNS og oprette en A-record.
