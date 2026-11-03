@@ -41,6 +41,4 @@ Enum-værdierne gemmes som tekst i databasen med `EnumType.STRING`. Nye hændels
 `MEDIUM`, medmindre værdierne ændres eller bliver sat.
 
 
-*Opsummeringen beskriver arbejdet i denne uge. Senere udvidelser og tests dokumenteres i de efterfølgende indlæg.*
-
 [Tilbage til SM3-CIT]({{< relref "/projects/sm3-cit" >}})
