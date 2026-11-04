@@ -6,7 +6,7 @@ draft: false
 
 FantasyFUT is a student group project I worked on with Emil, Tobias and Seif. It began as a JavaFX desktop application backed by SQLite. The web edition brings the core game to the browser and is hosted on my own DigitalOcean server.
 
-[Play the web version](https://fantasyfut.antwi.dk/)
+[Play the web version](https://fantasyfut.antwi.dk/classic.html)
 
 ## Build a squad and play a season
 
@@ -18,7 +18,7 @@ The leaderboard lists managers by total points and shows gameweeks played. You c
 
 ## From desktop to web
 
-The web edition reuses the original Java player and club models, fixture generator, match simulator and points calculator. A separate Javalin module provides the HTTP API, and a responsive interface built with HTML, CSS and JavaScript replaces the JavaFX screens in the browser.
+The web edition reuses the original Java player and club models, fixture generator, match simulator and points calculator. A separate Javalin module provides the HTTP API, and a responsive interface built with HTML, CSS and JavaScript replaces the JavaFX screens in the browser. The original-look interface recreates our desktop menu and game screens using the same football and stadium backgrounds, large white buttons and familiar navigation, adapted for both desktop browsers and mobile screens.
 
 Browser sessions keep managers signed in separately. Passwords are stored as bcrypt hashes, and each account has its own SQLite-backed season. Lineups lock after the first gameweek, and each round is saved in one transaction. A season lasts 38 gameweeks; resetting clears only that manager's results and points, keeping the account and lineup.
 
