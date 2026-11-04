@@ -27,5 +27,10 @@ I'm open to student jobs and internships where I can contribute, learn from othe
 **Cyber Incident Tracker**
 
 [View project →]({{< relref "/projects/sm3-cit" >}})
+
+### Carport FOG
+A group project for configuring carports and managing orders, built with Java, Javalin and PostgreSQL. Deployed on my own DigitalOcean server with Docker and HTTPS.
+
+[View project →]({{< relref "/projects/carport-fog" >}}) · [Live application →](https://carport.antwi.dk/)
 {{< /text-section >}}
 
