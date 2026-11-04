@@ -26,7 +26,7 @@ I'm open to student jobs and internships where I can contribute, learn from othe
 ### SM3-CIT
 **Cyber Incident Tracker**
 
-[View project →]({{< relref "/projects/sm3-cit" >}})
+[View project →]({{< relref "/projects/sm3-cit" >}}) · [Live API →](https://api.antwi.dk/api/v1/incidents) · [GitHub →](https://github.com/nykantwi/SM3-projekt---Cyber-Incident-Tracker)
 
 ### Carport FOG
 A group project for configuring carports and managing orders, built with Java, Javalin and PostgreSQL. Deployed on my own DigitalOcean server with Docker and HTTPS.

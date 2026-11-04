@@ -6,7 +6,7 @@ draft: false
 
 Carport FOG is a group project I worked on with my fellow students. The application lets customers configure a carport and submit an order, with separate areas for customers, sales staff and administrators.
 
-[Open the live application](https://carport.antwi.dk/) · [View the group repository on GitHub](https://github.com/EmilOzel/Carport-FOG)
+[Open the live application](https://carport.antwi.dk/)
 
 ## Features
 
