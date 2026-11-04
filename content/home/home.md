@@ -32,5 +32,10 @@ I'm open to student jobs and internships where I can contribute, learn from othe
 A group project for configuring carports and managing orders, built with Java, Javalin and PostgreSQL. Deployed on my own DigitalOcean server with Docker and HTTPS.
 
 [View project →]({{< relref "/projects/carport-fog" >}}) · [Live application →](https://carport.antwi.dk/)
+
+### FantasyFUT
+A fantasy football group project, originally built with JavaFX and SQLite. The web edition lets you pick a starting eleven, simulate a season and follow your place in the league.
+
+[View project →]({{< relref "/projects/fantasyfut" >}}) · [Play the web version →](https://fantasyfut.antwi.dk/)
 {{< /text-section >}}
 
