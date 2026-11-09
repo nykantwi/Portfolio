@@ -6,7 +6,7 @@ draft: false
 
 FantasyFUT is a student group project I worked on with Emil, Tobias and Seif. It began as a JavaFX desktop application backed by SQLite. The web edition brings the core game to the browser and is hosted on my own DigitalOcean server.
 
-[Play the web version](https://fantasyfut.antwi.dk/classic.html)
+[Play the web version](https://fantasyfut.antwi.dk/)
 
 ## Build a squad and play a season
 
