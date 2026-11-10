@@ -1,10 +1,10 @@
 # Keep the downloaded demo files on disk, but exclude them from the website.
-defaultContentLanguage = 'en'
+defaultContentLanguage = 'da'
 ignoreFiles = ['content[/\\](blog|authors|articles|client-work|education|experience|testimonial|news|series|skills|es)[/\\]', 'content[/\\](cv|showcase|search|search-optout)(\.[a-z]+)?\.md$', '\.(ar|es|fr|he)\.md$', 'VunerabilityManagement\.md$']
 
 baseURL = "https://nykantwi.github.io/Portfolio/"
 title = "Nana Yaw Kyei Antwi | Portfolio"
-languageCode = "en"
+languageCode = "da-DK"
 
 [pagination]
 pagerSize = 3
@@ -79,13 +79,13 @@ target = "assets/css/bootstrap-print.css"
 
 [params]
 title = 'Nana Yaw Kyei Antwi | Portfolio'
-description = 'Projects and work by Nana Yaw Kyei Antwi.'
+description = 'Projekter af Nana Yaw Kyei Antwi.'
 images = ['/img/og-img.png']
 themeColor = '#478079'
 
 [params.seo]
 siteName = 'Nana Yaw Kyei Antwi'
-siteDescription = 'Projects and work by Nana Yaw Kyei Antwi.'
+siteDescription = 'Projekter af Nana Yaw Kyei Antwi.'
 siteImage = '/img/og-img.png'
 
 [params.social]
@@ -159,36 +159,36 @@ header = false
 mobileHeader = false
 
 [languages]
-[languages.en]
+[languages.da]
 disabled = false
-locale = 'en'
-label = 'English'
+locale = 'da-DK'
+label = 'Dansk'
 title = 'Nana Yaw Kyei Antwi | Portfolio'
 weight = 1
 
-[[languages.en.menus.header]]
-name = 'Home'
+[[languages.da.menus.header]]
+name = 'Forside'
 URL = '/'
 weight = 1
-[[languages.en.menus.header]]
-name = 'About'
+[[languages.da.menus.header]]
+name = 'Om mig'
 URL = '/about/'
 weight = 2
-[[languages.en.menus.header]]
-name = 'Projects'
+[[languages.da.menus.header]]
+name = 'Projekter'
 URL = '/projects/'
 weight = 3
-[[languages.en.menus.header]]
-name = 'Contact'
+[[languages.da.menus.header]]
+name = 'Kontakt'
 URL = '/contact/'
 weight = 4
 
-[[languages.en.menus.footer]]
-name = 'Projects'
+[[languages.da.menus.footer]]
+name = 'Projekter'
 URL = '/projects/'
 weight = 1
-[[languages.en.menus.footer]]
-name = 'Contact'
+[[languages.da.menus.footer]]
+name = 'Kontakt'
 URL = '/contact/'
 weight = 2
 

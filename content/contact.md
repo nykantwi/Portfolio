@@ -1,11 +1,13 @@
 ---
-title: "Contact"
-description: "Get in touch about student jobs, internships or my projects."
+title: "Kontakt"
+description: "Kontakt mig om studiejob, praktik eller mine projekter."
 draft: false
 ---
 
-Have a student job, internship opportunity or a question about one of my projects? I'd be happy to hear from you.
+Har du et studiejob, en praktikplads eller et spørgsmål om et af mine projekter? Så hører jeg gerne fra dig.
 
-You can reach me by email:
+Du kan kontakte mig via e-mail eller LinkedIn.
 
 [nanayawtnrn@gmail.com](mailto:nanayawtnrn@gmail.com)
+
+[LinkedIn](https://www.linkedin.com/in/nana-yaw-kyei-antwi-397a44354/)

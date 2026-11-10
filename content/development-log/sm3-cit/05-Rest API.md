@@ -1,5 +1,5 @@
 ---
-title: "Uge 5 – REST API intro"
+title: "Uge 5 – Introduktion til REST-API"
 description: "REST API til CIT med Javalin, CRUD-endpoints, DTO’er, validering og fejlhåndtering."
 project: "sm3-cit"
 draft: false

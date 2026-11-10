@@ -1,5 +1,5 @@
 ---
-title: "Uge 1 – JPA Basics"
+title: "Uge 1 – Introduktion til JPA"
 description: "Opsætning af projektet, lagring af hændelser og CRUD med JPA/Hibernate."
 project: "sm3-cit"
 draft: false

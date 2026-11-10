@@ -1,41 +1,43 @@
 +++
-title = "Home"
+title = "Forside"
 type = "home"
 draft = false
 +++
 
 <section class="section section--border-bottom section--padding" id="home">
   <div class="container" style="padding-top: 5rem; padding-bottom: 3rem;">
-    <p class="section__subtitle">COMPUTER SCIENCE STUDENT · EK</p>
+    <p class="section__subtitle">DATAMATIKERSTUDERENDE · EK</p>
     <h1>Nana Yaw<br>Kyei Antwi</h1>
-    <p class="lead" style="max-width: 640px; margin-top: 1.5rem;">Studying Computer Science at Erhvervsakademi København (EK). Explore my projects as I learn to turn ideas into working software.</p>
-    <a class="btn btn-primary" href="{{< relref "/projects" >}}">Explore my work</a>
-    <a class="btn btn-outline-primary" href="{{< relref "/contact" >}}">Get in touch</a>
+    <p class="lead" style="max-width: 640px; margin-top: 1.5rem;">Jeg læser til datamatiker på Erhvervsakademi København (EK). Se mine projekter, hvor jeg omsætter idéer til fungerende software.</p>
+    <a class="btn btn-primary" href="{{< relref "/projects" >}}">Se mine projekter</a>
+    <a class="btn btn-outline-primary" href="{{< relref "/contact" >}}">Kontakt mig</a>
   </div>
 </section>
 
-{{< text-section title="About me" sectionId="about" >}}
-I'm Nana Yaw Kyei Antwi, a Computer Science student at Erhvervsakademi København (EK).
+{{< text-section title="Om mig" sectionId="about" >}}
+Jeg hedder Nana Yaw Kyei Antwi og læser til datamatiker på Erhvervsakademi København (EK).
 
-I'm exploring software development through practical projects: breaking down problems, trying out solutions and learning along the way. Over time, I'd like to broaden my skills into cybersecurity. This portfolio is where I share what I build, my contributions and the lessons I take from each project.
+Jeg lærer softwareudvikling gennem praktiske projekter, hvor jeg deler problemer op, afprøver løsninger og lærer af resultaterne. Med tiden vil jeg gerne udvide mine kompetencer inden for cybersikkerhed. Her viser jeg, hvad jeg bygger, hvad jeg bidrager med, og hvad jeg lærer af hvert projekt.
 
-I'm open to student jobs and internships where I can contribute, learn from others and gain practical experience alongside my studies. In the longer term, I aim to build a full-time career in software development.
+Jeg søger studiejob og praktik, hvor jeg kan bidrage, lære af andre og få praktisk erfaring ved siden af studiet. På sigt vil jeg gerne arbejde på fuld tid med softwareudvikling.
 {{< /text-section >}}
 
-{{< text-section title="Projects" sectionId="projects" >}}
+{{< text-section title="Projekter" sectionId="projects" >}}
 ### SM3-CIT
-**Cyber Incident Tracker**
+**Registrering af cyberhændelser**
 
-[View project →]({{< relref "/projects/sm3-cit" >}}) · [Live API →](https://api.antwi.dk/api/v1/incidents) · [GitHub →](https://github.com/nykantwi/SM3-projekt---Cyber-Incident-Tracker)
+SM3-CIT består foreløbig kun af et backend-API. Jeg arbejder på frontenden.
+
+[Se projekt →]({{< relref "/projects/sm3-cit" >}}) · [Åbn API →](https://api.antwi.dk/api/v1/incidents) · [GitHub →](https://github.com/nykantwi/SM3-projekt---Cyber-Incident-Tracker)
 
 ### Carport FOG
-A group project for configuring carports and managing orders, built with Java, Javalin and PostgreSQL. Deployed on my own DigitalOcean server with Docker and HTTPS.
+En applikation til at konfigurere carporte og håndtere bestillinger, bygget med Java, Javalin og PostgreSQL.
 
-[View project →]({{< relref "/projects/carport-fog" >}}) · [Live application →](https://carport.antwi.dk/)
+[Se projekt →]({{< relref "/projects/carport-fog" >}}) · [Åbn applikationen →](https://carport.antwi.dk/)
 
 ### FantasyFUT
-A fantasy football group project, originally built with JavaFX and SQLite. The web edition brings our original design to the browser: pick a starting eleven, simulate a season and follow your place in the league.
+Et fantasyfodboldspil, der oprindeligt blev bygget med JavaFX og SQLite. I webversionen kan du vælge en startellever, simulere en sæson og følge din placering i ligaen.
 
-[View project →]({{< relref "/projects/fantasyfut" >}}) · [Play the web version →](https://fantasyfut.antwi.dk/)
+[Se projekt →]({{< relref "/projects/fantasyfut" >}}) · [Spil webversionen →](https://fantasyfut.antwi.dk/)
 {{< /text-section >}}
 

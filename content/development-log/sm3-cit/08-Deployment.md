@@ -1,6 +1,6 @@
 ---
-title: "Uge 8 – Deployment"
-description: "Deployment af CIT med GitHub Actions, Docker Hub, DigitalOcean og HTTPS gennem Caddy."
+title: "Uge 8 – Idriftsættelse"
+description: "Idriftsættelse af CIT med GitHub Actions, Docker Hub, DigitalOcean og HTTPS gennem Caddy."
 project: "sm3-cit"
 draft: false
 ---

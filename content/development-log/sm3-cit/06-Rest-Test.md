@@ -1,5 +1,5 @@
 ---
-title: "Uge 6 – REST & Test"
+title: "Uge 6 – REST-API og test"
 description: "Automatiserede API-tests med REST Assured, Hamcrest og en separat PostgreSQL-testdatabase."
 project: "sm3-cit"
 draft: false

@@ -1,33 +1,29 @@
 ---
 title: "FantasyFUT"
-description: "A fantasy football group project with squad selection, match simulation and a leaderboard — now available in the browser."
+description: "Et fantasyfodboldspil til browseren med holdudtagelse, kampsimulering og rangliste."
 draft: false
 ---
 
-FantasyFUT is a student group project I worked on with Emil, Tobias and Seif. It began as a JavaFX desktop application backed by SQLite. The web edition brings the core game to the browser and is hosted on my own DigitalOcean server.
+FantasyFUT begyndte som et JavaFX-program til computeren med SQLite som database. Webversionen gør spillets vigtigste funktioner tilgængelige i browseren.
 
-[Play the web version](https://fantasyfut.antwi.dk/)
+[Spil webversionen](https://fantasyfut.antwi.dk/)
 
-## Build a squad and play a season
+## Sæt et hold og spil en sæson
 
-Choose a starting eleven in a 4–4–2 formation from the project's dataset of **526 players and 20 clubs**. Search by player or club, filter by position, or use quick pick to get started.
+Vælg en startellever i en 4–4–2-opstilling blandt projektets **526 spillere og 20 klubber**. Søg efter spiller eller klub, filtrér efter position, eller brug hurtigvalg.
 
-Create a manager account, save your lineup, and simulate gameweeks. The match engine generates goals, assists, playing time and cards, and the original points calculator converts those performances into fantasy points. The match centre shows the latest fixtures, scorelines and individual points for your eleven.
+Opret en managerkonto, gem din opstilling, og simulér spillerunderne. Kampmotoren genererer mål, assists, spilletid og kort, som den oprindelige pointberegner omsætter til fantasypoint. I kampoversigten kan du se de seneste kampe, resultater og point for hver spiller på dit hold.
 
-The leaderboard lists managers by total points and shows gameweeks played. You can inspect another manager's squad and player points. Each manager plays an independent simulated season; this is a student simulation, not a live football data service.
+Ranglisten viser managerne efter deres samlede point og antal spillede runder. Du kan se andre manageres hold og spillerpoint. Hver manager spiller sin egen simulerede sæson.
 
-## From desktop to web
+## Fra computerprogram til webspil
 
-The web edition reuses the original Java player and club models, fixture generator, match simulator and points calculator. A separate Javalin module provides the HTTP API, and a responsive interface built with HTML, CSS and JavaScript replaces the JavaFX screens in the browser. The original-look interface recreates our desktop menu and game screens using the same football and stadium backgrounds, large white buttons and familiar navigation, adapted for both desktop browsers and mobile screens.
+Webversionen genbruger Java-modellerne for spillere og klubber, generatoren til kampprogrammet, kampmotoren og pointberegneren. Et separat Javalin-modul leverer HTTP-API’et. Brugerfladen er bygget med HTML, CSS og JavaScript og tilpasser sig både computer og mobil. Den genskaber menuerne og spilskærmene fra JavaFX-versionen med de samme fodbold- og stadionbaggrunde.
 
-Browser sessions keep managers signed in separately. Passwords are stored as bcrypt hashes, and each account has its own SQLite-backed season. Lineups lock after the first gameweek, and each round is saved in one transaction. A season lasts 38 gameweeks; resetting clears only that manager's results and points, keeping the account and lineup.
+Hver manager har sin egen browsersession, og adgangskoder gemmes som bcrypt-hashes. Hver kontos sæson gemmes i SQLite. Opstillingen låses efter første spillerunde, og hver runde gemmes i én databasetransaktion. En sæson varer 38 runder. Ved nulstilling slettes managerens resultater og point, mens kontoen og opstillingen bevares.
 
-## Deployment
+De automatiske tests dækker validering af konti og hold, separate sæsoner, nulstilling, pointberegning, grænsen på 38 runder, datalagring, browsersessioner og CSRF-beskyttelse.
 
-The application runs in Docker on Ubuntu at **fantasyfut.antwi.dk**. Caddy provides HTTPS and routes requests to the app. SQLite data persists in a Docker volume, so accounts and results survive container recreation. The desktop database and old accounts are not imported.
+**Teknologier** · Java 21 · Javalin · SQLite · HTML/CSS/JavaScript · Maven · JUnit
 
-The automated tests cover account and team validation, separate user seasons, resets, score aggregation, the 38-gameweek limit, persistence, browser sessions and CSRF protection.
-
-**Technologies:** Java 21 · Javalin · SQLite · HTML/CSS/JavaScript · Maven · JUnit · Docker · Caddy
-
-[Back to projects]({{< relref "/projects" >}})
+[Tilbage til projekter]({{< relref "/projects" >}})

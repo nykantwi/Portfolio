@@ -1,5 +1,5 @@
 ---
-title: "Uge 2 – JPA Relations"
+title: "Uge 2 – Relationer i JPA"
 description: "Relationer mellem brugere og hændelser, DAO-interfaces og validering."
 project: "sm3-cit"
 draft: false

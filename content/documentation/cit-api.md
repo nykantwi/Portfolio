@@ -8,7 +8,7 @@ API’et bruges til at oprette, hente, opdatere og slette hændelser.
 
 Baseadresse: `http://localhost:7070/api/v1`
 
-## Endpoints
+## API-ruter
 
 Alle URL’er nedenfor er relative til baseadressen.
 
@@ -41,9 +41,9 @@ Tokenet gælder i én time. Efter en rolleændring skal brugeren logge ind igen 
 
 Adgangen er rollebaseret, ikke begrænset til brugerens egne hændelser. `reportedEmail` vælges i requesten og knyttes endnu ikke automatisk til den indloggede bruger.
 
-## Request Body og Response-formater
+## Formater for anmodninger og svar
 
-### (1) Hændelse – response
+### (1) Hændelse – svar
 
 Eksempel på en hændelse, som API’et returnerer:
 
@@ -64,7 +64,7 @@ der har rapporteret hændelsen.
 Ved GET /incidents returneres en liste af sådanne objekter: `[{...}, {...}]`.
 Hvis der ingen hændelser er, returneres en tom liste: `[]`.
 
-### (2) Oprettelse – request
+### (2) Oprettelse – anmodning
 
 Bruges til POST /incidents.
 
@@ -87,7 +87,7 @@ ID genereres automatisk, og status sættes til OPEN.
 Ved succes returneres status 201 Created og den oprettede hændelse
 i format (1).
 
-### (3) Opdatering – request
+### (3) Opdatering – anmodning
 
 Bruges til PUT /incidents/{id}. Erstat {id} med hændelsens ID.
 
@@ -112,7 +112,7 @@ Hændelsens ID og rapportør ændres ikke.
 Ved succes returneres status 200 OK og den opdaterede hændelse
 i format (1).
 
-### (4) Registrering – request og response
+### (4) Registrering – anmodning og svar
 
 POST /auth/register:
 
@@ -138,7 +138,7 @@ Response med status 201:
 
 Registrering giver ikke automatisk et token. Brug login bagefter.
 
-### (5) Login – request og response
+### (5) Login – anmodning og svar
 
 POST /auth/login:
 

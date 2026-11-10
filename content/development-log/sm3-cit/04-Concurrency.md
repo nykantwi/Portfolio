@@ -1,5 +1,5 @@
 ---
-title: "Uge 4 – Concurrency"
+title: "Uge 4 – Samtidig behandling"
 description: "Optælling af hændelser med ExecutorService, Callable og Future."
 project: "sm3-cit"
 draft: false

@@ -1,6 +1,6 @@
 ---
-title: "Projects"
-description: "Explore my projects and follow their development."
+title: "Projekter"
+description: "Se mine projekter, og følg deres udvikling."
 ---
 
-Explore what I am building and follow my progress through the project documentation and weekly logs.
+Se mine projekter, og følg udviklingen i dokumentationen og de ugentlige logbøger.

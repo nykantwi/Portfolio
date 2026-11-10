@@ -1,5 +1,5 @@
 ---
-title: "Uge 7 – Security"
+title: "Uge 7 – Sikkerhed"
 description: "Login med bcrypt og JWT, rollebaseret adgangskontrol og tests af beskyttede endpoints."
 project: "sm3-cit"
 draft: false
@@ -8,7 +8,7 @@ draft: false
 ## Hvad jeg har implementeret
 
 Denne uge har jeg tilføjet registrering og login til CIT. Passwords gemmes som en bcrypt-hash, og ved login får brugeren 
-et JWT, der gælder i en time. Jeg bruger`TokenSecurity`-bibliotek, og nøglen hentes fra `JWT_SECRET`.
+et JWT, der gælder i en time. Jeg bruger`TokenSikkerhed`-bibliotek, og nøglen hentes fra `JWT_SECRET`.
 
 ## Brugere, passwords og roller
 

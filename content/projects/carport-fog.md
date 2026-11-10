@@ -1,30 +1,22 @@
 ---
 title: "Carport FOG"
-description: "A group project for configuring carports and managing orders, built with Java, Javalin and PostgreSQL."
+description: "En applikation til at konfigurere carporte og håndtere bestillinger, bygget med Java, Javalin og PostgreSQL."
 draft: false
 ---
 
-Carport FOG is a group project I worked on with my fellow students. The application lets customers configure a carport and submit an order, with separate areas for customers, sales staff and administrators.
+Med Carport FOG kan kunder konfigurere en carport og sende en bestilling. Kunder, sælgere og administratorer har hver deres område i applikationen.
 
-[Open the live application](https://carport.antwi.dk/)
+[Åbn applikationen](https://carport.antwi.dk/)
 
-## Features
+## Funktioner
 
-- Customer registration and login.
-- Carport configuration with dimensions, roofing and an optional shed.
-- Price calculations and carport drawings.
-- Order management and role-based pages for sales staff and administrators.
+- Oprettelse af kundekonto og login.
+- Konfiguration af carport med mål, tag og mulighed for at tilføje et skur.
+- Prisberegning og tegninger af carporten.
+- Ordrehåndtering og sider tilpasset sælgere og administratorer.
 
-## Technology
+## Teknologi
 
-The application uses Java 21 and Javalin, with Thymeleaf for server-rendered HTML. PostgreSQL stores users, carport configurations and orders. Maven builds the application and runs the JUnit tests.
+Applikationen bruger Java 21 og Javalin. Thymeleaf genererer HTML på serveren, og PostgreSQL gemmer brugere, carportkonfigurationer og bestillinger. Maven bygger applikationen og kører JUnit-testene.
 
-## Deployment on my own server
-
-I moved the application to my own Ubuntu server on DigitalOcean. It runs in Docker alongside my existing API, with a separate PostgreSQL database and persistent storage. Caddy routes requests to the application and provides HTTPS at **carport.antwi.dk**.
-
-The deployment uses memory limits to fit the small server. The database was initialized from the project's SQL schema, without importing old users or orders. The Docker configuration and deployment instructions are included in the group repository.
-
-This project gave me practical experience with deploying a Java application, connecting containers, configuring a subdomain and managing database configuration through environment variables.
-
-[Back to projects]({{< relref "/projects" >}})
+[Tilbage til projekter]({{< relref "/projects" >}})

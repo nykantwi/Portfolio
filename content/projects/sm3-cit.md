@@ -1,12 +1,14 @@
 ---
 title: "SM3-CIT"
-description: "Cyber Incident Tracker – udvikling af backend og ugentlige opsummeringer."
+description: "Et system til registrering af cyberhændelser. Frontenden er under udvikling."
 draft: false
 ---
 
-[Live API →](https://api.antwi.dk/api/v1/incidents) · [GitHub →](https://github.com/nykantwi/SM3-projekt---Cyber-Incident-Tracker)
+SM3-CIT består foreløbig kun af et backend-API. Jeg arbejder på frontenden.
 
-The API requires authentication to access incidents.
+[Åbn API →](https://api.antwi.dk/api/v1/incidents) · [GitHub →](https://github.com/nykantwi/SM3-projekt---Cyber-Incident-Tracker)
+
+Du skal logge ind for at tilgå hændelser via API’et.
 
 ## Logbog
 
