@@ -3,7 +3,7 @@ defaultContentLanguage = 'da'
 ignoreFiles = ['content[/\\](blog|authors|articles|client-work|education|experience|testimonial|news|series|skills|es)[/\\]', 'content[/\\](cv|showcase|search|search-optout)(\.[a-z]+)?\.md$', '\.(ar|es|fr|he)\.md$', 'VunerabilityManagement\.md$']
 
 baseURL = "https://nykantwi.github.io/Portfolio/"
-title = "Nana Yaw Kyei Antwi | Portfolio"
+title = "Nana | Portfolio"
 languageCode = "da-DK"
 
 [pagination]
@@ -78,7 +78,7 @@ target = "assets/css/bootstrap-print.css"
 
 
 [params]
-title = 'Nana Yaw Kyei Antwi | Portfolio'
+title = 'Nana | Portfolio'
 description = 'Projekter af Nana Yaw Kyei Antwi.'
 images = ['/img/og-img.png']
 themeColor = '#478079'
@@ -163,7 +163,7 @@ mobileHeader = false
 disabled = false
 locale = 'da-DK'
 label = 'Dansk'
-title = 'Nana Yaw Kyei Antwi | Portfolio'
+title = 'Nana | Portfolio'
 weight = 1
 
 [[languages.da.menus.header]]
