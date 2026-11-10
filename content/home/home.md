@@ -22,6 +22,15 @@ Jeg lærer softwareudvikling gennem praktiske projekter, hvor jeg deler probleme
 Jeg søger studiejob og praktik, hvor jeg kan bidrage, lære af andre og få praktisk erfaring ved siden af studiet. På sigt vil jeg gerne arbejde på fuld tid med softwareudvikling.
 {{< /text-section >}}
 
+{{< text-section title="Tekniske kompetencer" sectionId="kompetencer" >}}
+- **Programmering:** Java og JavaScript
+- **Backend:** REST-API’er med Javalin
+- **Databaser:** SQL, PostgreSQL og SQLite samt datamodellering med JPA/Hibernate
+- **Frontend:** HTML, CSS, React og JavaFX
+- **Applikationssikkerhed:** Login med JWT, hashing af adgangskoder med bcrypt og rollebaseret adgangskontrol
+- **Test og fejlfinding:** Automatiserede tests med JUnit og systematisk fejlfinding
+{{< /text-section >}}
+
 {{< text-section title="Projekter" sectionId="projects" >}}
 ### SM3-CIT
 **Registrering af cyberhændelser**
