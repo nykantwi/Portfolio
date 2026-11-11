@@ -1,29 +1,43 @@
 ---
 title: "FantasyFUT"
-description: "Et fantasyfodboldspil til browseren med holdudtagelse, kampsimulering og rangliste."
+description: "Et SP4/ICE-projekt, jeg har arbejdet på med min studiegruppe, om at omsætte en selvvalgt idé til et fantasyfodboldspil med holdudtagelse, kampsimulering og rangliste."
 draft: false
 ---
 
-FantasyFUT er et projekt, jeg har arbejdet på med min studiegruppe. Det begyndte som et JavaFX-program til computeren med SQLite som database. Webversionen gør spillets vigtigste funktioner tilgængelige i browseren.
+FantasyFUT er et **SP4/ICE-projekt**, jeg har arbejdet på med min studiegruppe. ICE står for **Innovation, Creativity og Entrepreneurship**. Opgaven gav os frihed til selv at vælge en idé, definere det problem, applikationen skulle adressere, og afgrænse en løsning, vi kunne implementere.
+
+Vi valgte at arbejde med et fantasyfodboldspil. Den oprindelige applikation blev bygget som et JavaFX-program med SQLite som database. Spillet er siden blevet gjort tilgængeligt i browseren.
 
 [Spil webversionen](https://fantasyfut.antwi.dk/)
 
-## Sæt et hold og spil en sæson
+## Idé og formål
 
-Vælg en startellever i en 4–4–2-opstilling blandt projektets **526 spillere og 20 klubber**. Søg efter spiller eller klub, filtrér efter position, eller brug hurtigvalg.
+Idéen med FantasyFUT er at samle holdudtagelse, kampsimulering og pointberegning i én applikation. Brugeren skal kunne sammensætte sit eget hold, simulere kampe og følge spillernes præstationer og sin placering i ligaen.
 
-Opret en managerkonto, gem din opstilling, og simulér spillerunderne. Kampmotoren genererer mål, assists, spilletid og kort, som den oprindelige pointberegner omsætter til fantasypoint. I kampoversigten kan du se de seneste kampe, resultater og point for hver spiller på dit hold.
+Spillets forløb giver brugeren mulighed for at afprøve forskellige hold og se, hvordan mål, assists, spilletid og kort påvirker pointene.
 
-Ranglisten viser managerne efter deres samlede point og antal spillede runder. Du kan se andre manageres hold og spillerpoint. Hver manager spiller sin egen simulerede sæson.
+## Fra krav til design
 
-## Fra computerprogram til webspil
+ICE-opgaven lagde op til at arbejde fra funktionelle krav og objektanalyse til domænemodel, klassediagram og implementering. I projektets README beskrev vi blandt andet krav om brugerlogin, hold på præcis 11 spillere, spillersøgning, kampsimulering, pointberegning og nulstilling af sæsonen.
 
-Webversionen genbruger Java-modellerne for spillere og klubber, generatoren til kampprogrammet, kampmotoren og pointberegneren. Et separat Javalin-modul leverer HTTP-API’et. Brugerfladen er bygget med HTML, CSS og JavaScript og tilpasser sig både computer og mobil. Den genskaber menuerne og spilskærmene fra JavaFX-versionen med de samme fodbold- og stadionbaggrunde.
+Projektets designmateriale indeholder en domænemodel og et klassediagram i PlantUML. Modellerne beskriver blandt andet brugere, hold, spillere, klubber, kampe og statistik samt relationerne mellem dem. De danner grundlag for at diskutere domænet og planlægge ansvarsfordelingen i koden.
 
-Hver manager har sin egen browsersession, og adgangskoder gemmes som bcrypt-hashes. Hver kontos sæson gemmes i SQLite. Opstillingen låses efter første spillerunde, og hver runde gemmes i én databasetransaktion. En sæson varer 38 runder. Ved nulstilling slettes managerens resultater og point, mens kontoen og opstillingen bevares.
+## Det færdige spil
 
-De automatiske tests dækker validering af konti og hold, separate sæsoner, nulstilling, pointberegning, grænsen på 38 runder, datalagring, browsersessioner og CSRF-beskyttelse.
+Brugeren kan oprette en konto, logge ind og gemme en startellever. Spillerlisten kan søges og filtreres efter position. Kampmotoren genererer kampbegivenheder, og pointberegneren omsætter dem til spillerpoint og holdets samlede score.
 
-**Teknologier** · Java 21 · Javalin · SQLite · HTML/CSS/JavaScript · Maven · JUnit
+Ranglisten giver overblik over managerne og deres point. Brugeren kan også se holdenes individuelle spillerpoint og starte en ny sæson ved at nulstille resultaterne.
+
+## Fra JavaFX til browser
+
+Webversionen genbruger Java-modellerne, generatoren til kampprogrammet, kampmotoren og pointberegneren fra desktopprojektet. Javalin leverer HTTP-API’et, og HTML, CSS og JavaScript genskaber den oprindelige brugerflade med de samme menuer og fodboldbaggrunde.
+
+I webversionen vælger brugeren en startellever i en 4–4–2-opstilling blandt **526 spillere og 20 klubber**. Hver manager har sin egen sæson på 38 runder, som gemmes i SQLite.
+
+## Erfaringer fra arbejdet
+
+Projektet samler arbejdet med at omsætte en selvvalgt idé til konkrete krav, modellere et domæne og fordele funktionalitet mellem brugerflade, datalagring og spillogik. Den senere webversion bygger videre på dette ved at genbruge spillets logik gennem en ny brugerflade.
+
+**Teknologier** · Java 21 · JavaFX · SQLite · JDBC · PlantUML · Maven · Javalin · HTML/CSS/JavaScript
 
 [Tilbage til projekter]({{< relref "/projects" >}})

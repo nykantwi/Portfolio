@@ -45,7 +45,7 @@ Et projekt, jeg har arbejdet på med min studiegruppe, med udgangspunkt i FOGs f
 [Se projekt →]({{< relref "/projects/carport-fog" >}}) · [Åbn applikationen →](https://carport.antwi.dk/)
 
 ### FantasyFUT
-Et fantasyfodboldspil, jeg har arbejdet på med min studiegruppe, oprindeligt bygget med JavaFX og SQLite. I webversionen kan du vælge en startellever, simulere en sæson og følge din placering i ligaen.
+Et SP4/ICE-projekt, jeg har arbejdet på med min studiegruppe. Vi omsatte en selvvalgt idé til et fantasyfodboldspil med holdudtagelse, kampsimulering og pointberegning, oprindeligt bygget med JavaFX og SQLite. Spillet kan nu prøves i browseren.
 
 [Se projekt →]({{< relref "/projects/fantasyfut" >}}) · [Spil webversionen →](https://fantasyfut.antwi.dk/)
 
