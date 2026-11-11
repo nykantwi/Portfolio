@@ -4,7 +4,7 @@ description: "Et fantasyfodboldspil til browseren med holdudtagelse, kampsimuler
 draft: false
 ---
 
-FantasyFUT begyndte som et JavaFX-program til computeren med SQLite som database. Webversionen gør spillets vigtigste funktioner tilgængelige i browseren.
+FantasyFUT er et projekt, jeg har arbejdet på med min studiegruppe. Det begyndte som et JavaFX-program til computeren med SQLite som database. Webversionen gør spillets vigtigste funktioner tilgængelige i browseren.
 
 [Spil webversionen](https://fantasyfut.antwi.dk/)
 

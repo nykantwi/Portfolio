@@ -1,10 +1,10 @@
 ---
 title: "Carport FOG"
-description: "Et fælles studieprojekt om at digitalisere FOGs carportbestilling fra kundens konfiguration til sælgerens ordrebehandling."
+description: "Et projekt om at digitalisere FOGs carportbestilling fra kundens konfiguration til sælgerens ordrebehandling."
 draft: false
 ---
 
-Carport FOG er et studieprojekt, som vi udviklede i samarbejde på datamatikeruddannelsen. Opgaven var at udvikle et webbaseret carportsystem med udgangspunkt i FOGs forretning og arbejdsgange. Målet var en løsning, der kunne danne grundlag for digitalisering af virksomhedens bestillingsproces.
+Carport FOG er et projekt, jeg har arbejdet på med min studiegruppe på tre personer. Opgaven var at udvikle et webbaseret carportsystem med udgangspunkt i FOGs forretning og arbejdsgange. Målet var en løsning, der kunne danne grundlag for digitalisering af virksomhedens bestillingsproces.
 
 [Åbn applikationen](https://carport.antwi.dk/)
 

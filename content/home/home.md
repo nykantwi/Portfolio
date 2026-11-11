@@ -40,12 +40,12 @@ SM3-CIT består foreløbig kun af et backend-API. Jeg arbejder på frontenden.
 [Se projekt →]({{< relref "/projects/sm3-cit" >}}) · [Åbn API →](https://api.antwi.dk/api/v1/incidents) · [GitHub →](https://github.com/nykantwi/SM3-projekt---Cyber-Incident-Tracker)
 
 ### Carport FOG
-Et fælles studieprojekt med udgangspunkt i FOGs forretning. Vi udviklede en webapplikation til at digitalisere carportbestillinger og gøre det lettere for kunder og sælgere at håndtere processen, bygget med Java, Javalin og PostgreSQL.
+Et projekt, jeg har arbejdet på med min studiegruppe, med udgangspunkt i FOGs forretning. Vi udviklede en webapplikation til at digitalisere carportbestillinger og gøre det lettere for kunder og sælgere at håndtere processen, bygget med Java, Javalin og PostgreSQL.
 
 [Se projekt →]({{< relref "/projects/carport-fog" >}}) · [Åbn applikationen →](https://carport.antwi.dk/)
 
 ### FantasyFUT
-Et fantasyfodboldspil, der oprindeligt blev bygget med JavaFX og SQLite. I webversionen kan du vælge en startellever, simulere en sæson og følge din placering i ligaen.
+Et fantasyfodboldspil, jeg har arbejdet på med min studiegruppe, oprindeligt bygget med JavaFX og SQLite. I webversionen kan du vælge en startellever, simulere en sæson og følge din placering i ligaen.
 
 [Se projekt →]({{< relref "/projects/fantasyfut" >}}) · [Spil webversionen →](https://fantasyfut.antwi.dk/)
 
