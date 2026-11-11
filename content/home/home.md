@@ -40,7 +40,7 @@ SM3-CIT består foreløbig kun af et backend-API. Jeg arbejder på frontenden.
 [Se projekt →]({{< relref "/projects/sm3-cit" >}}) · [Åbn API →](https://api.antwi.dk/api/v1/incidents) · [GitHub →](https://github.com/nykantwi/SM3-projekt---Cyber-Incident-Tracker)
 
 ### Carport FOG
-En applikation til at konfigurere carporte og håndtere bestillinger, bygget med Java, Javalin og PostgreSQL.
+Et fælles studieprojekt med udgangspunkt i FOGs forretning. Vi udviklede en webapplikation til at digitalisere carportbestillinger og gøre det lettere for kunder og sælgere at håndtere processen, bygget med Java, Javalin og PostgreSQL.
 
 [Se projekt →]({{< relref "/projects/carport-fog" >}}) · [Åbn applikationen →](https://carport.antwi.dk/)
 
