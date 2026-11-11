@@ -50,7 +50,7 @@ Et fantasyfodboldspil, der oprindeligt blev bygget med JavaFX og SQLite. I webve
 [Se projekt →]({{< relref "/projects/fantasyfut" >}}) · [Spil webversionen →](https://fantasyfut.antwi.dk/)
 
 ### Cupcake Shop
-Et fælles projekt fra 2. semester om at digitalisere cupcakebestillinger. Kunden vælger bund og topping, tilpasser sin kurv og gennemfører en betaling, mens virksomheden kan administrere kunder og ordrer. Bygget med Java, Javalin, Thymeleaf og PostgreSQL.
+Et projekt, jeg har arbejdet på i 2. semester, om at digitalisere cupcakebestillinger. Kunden vælger bund og topping, tilpasser sin kurv og gennemfører en betaling, mens virksomheden kan administrere kunder og ordrer. Bygget med Java, Javalin, Thymeleaf og PostgreSQL.
 
 [Se projekt →]({{< relref "/projects/cupcake" >}}) · [Prøv demobutikken →](https://cupcake.antwi.dk/)
 {{< /text-section >}}

@@ -1,10 +1,10 @@
 ---
 title: "Cupcake Shop"
-description: "Et fælles projekt fra 2. semester om en webshop, der digitaliserer bestilling af cupcakes fra kundens valg af bund og topping til betaling og ordrebehandling."
+description: "Et projekt, jeg har arbejdet på i 2. semester, om en webshop, der digitaliserer bestilling af cupcakes fra kundens valg af bund og topping til betaling og ordrebehandling."
 draft: false
 ---
 
-Cupcake Shop er et fælles projekt fra **2. semester på datamatikeruddannelsen**, som jeg udviklede sammen med Emil, Tobias og Seif. Vi byggede et webbaseret bestillingssystem til Olsker Cupcakes med kundelogin, indkøbskurv og administration af brugere og ordrer.
+Cupcake Shop er et projekt, jeg har arbejdet på i **2. semester på datamatikeruddannelsen**. Projektet er et webbaseret bestillingssystem til Olsker Cupcakes med kundelogin, indkøbskurv og administration af brugere og ordrer.
 
 [Prøv demobutikken](https://cupcake.antwi.dk/)
 
