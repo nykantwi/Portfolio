@@ -48,5 +48,10 @@ En applikation til at konfigurere carporte og håndtere bestillinger, bygget med
 Et fantasyfodboldspil, der oprindeligt blev bygget med JavaFX og SQLite. I webversionen kan du vælge en startellever, simulere en sæson og følge din placering i ligaen.
 
 [Se projekt →]({{< relref "/projects/fantasyfut" >}}) · [Spil webversionen →](https://fantasyfut.antwi.dk/)
+
+### Cupcake Shop
+En webshop fra et fælles studieprojekt, hvor kunden sammensætter cupcakes, administrerer sin kurv og gennemfører en bestilling med en fiktiv saldo. Bygget med Java, Javalin, Thymeleaf og PostgreSQL.
+
+[Se projekt →]({{< relref "/projects/cupcake" >}}) · [Prøv demobutikken →](https://cupcake.antwi.dk/)
 {{< /text-section >}}
 
